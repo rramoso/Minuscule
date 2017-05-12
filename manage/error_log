@@ -1,0 +1,6 @@
+[25-May-2016 15:00:04 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/minurgij/public_html/manage/application/models/Blog_model.php on line 177
+[25-May-2016 15:44:16 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/minurgij/public_html/manage/application/models/Blog_model.php on line 177
+[25-May-2016 15:49:52 America/New_York] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/minurgij/public_html/manage/application/models/Blog_model.php on line 132
+[26-May-2016 03:47:41 America/New_York] PHP Fatal error:  Call to a member function real_escape_string() on boolean in /home/minurgij/public_html/manage/system/database/drivers/mysqli/mysqli_driver.php on line 374
+[31-Jul-2016 19:37:59 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/minurgij/public_html/manage/application/controllers/Cron.php on line 56
+[13-Jan-2017 16:15:01 America/New_York] PHP Fatal error:  Unsupported operand types in /home/minurgij/public_html/manage/application/controllers/Dashboard.php on line 68

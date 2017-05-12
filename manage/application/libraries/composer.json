@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tumblr/tumblr": "dev-master",
+        "paypal/rest-api-sdk-php": "*"
+    }
+}

@@ -1,0 +1,569 @@
+/**
+* Main CSS File
+*
+* Table Of Contents:
+*   # Globals
+*   # Containers
+*   # Images
+*   # Menus
+*   # Alignments
+*   # Spacing / Padding
+*   # Typography
+*   # Forms
+*   # Animations
+*   # Materialize
+* #000000	(0,0,0)
+* #1c1a1a	(28,26,26)
+* #303030	(48,48,48)
+* #3f0e0e	(63,14,14)
+* #9d0000	(157,0,0)
+*
+* Fonts:
+*   'Open Sans', sans-serif;
+*   'Raleway', sans-serif;
+* Colors:
+*   Dark Blue: #343e5c;
+*   Dark Grey: #656c80;
+*
+* @author: Joseph Schultz - schultzjosephj@gmail.com
+* @version: 1.0.0
+* @modified: 10/29/2015
+*
+*/
+
+/**
+* =======
+* GLOBALS
+* =======
+**/
+
+html, body {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: #343e5c;
+    color: #f9f9f9;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: -50px;
+    margin-top: 30px;
+}
+
+#container.no-menu {
+    margin: 30px 0 0 0;
+}
+
+/**
+* =======
+* Container
+* =======
+**/
+
+.container.container-sm {
+    max-width: 500px;
+}
+
+.container.container-md {
+    max-width: 700px;
+}
+
+.container.container-lg {
+    width: 95%;
+    max-width: 1200px;
+}
+
+.box {
+    position: relative;
+    background: #f9f9f9;
+    padding: 5px 20px;
+    padding-bottom: 30px;
+    color: #1e1e1e;
+}
+
+.box.box-cut:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(-135deg, #f9f9f9 10px, transparent 0) 0 10px, linear-gradient(135deg, #f9f9f9 10px, #343e5c 0) 0 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: 20px 20px;
+    background-position: bottom;
+}
+
+/**
+* =======
+* Images
+* =======
+**/
+
+.logo img {
+    max-width: 100%;
+}
+
+img.thumb {
+    max-width: 25%;
+}
+
+/**
+* =======
+* Menus
+* =======
+**/
+
+.top-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #656c80;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.top-menu a {
+    color: #f9f9f9;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: rgba(26, 26, 26, 0.8);
+    transition: left 0.5s ease-in-out, background 0.25s ease-in-out;
+    z-index: 1000;
+}
+
+#main-menu:hover {
+    background: rgba(26, 26, 26, 1);
+}
+
+#main-menu ul {
+    list-style: none;
+}
+
+#main-menu ul li {
+    height: 60px;
+    line-height: 60px;
+    padding: 5px 10px;
+    transition: background 0.5s ease-in-out;
+}
+
+#main-menu ul li span.label {
+    float: left;
+}
+
+#main-menu ul li span.icon {
+    float: right;
+}
+
+#main-menu ul li a {
+    color: #f9f9f9;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main-menu span.icon i {
+    font-size: 1.75em;
+    transform: translateY(25%);
+    position: relative;
+    margin-right: 3px;
+}
+
+#main-menu ul li:hover {
+    background: #303030;
+}
+
+#main-menu.small {
+    left: -150px;
+    overflow-x: hidden;
+}
+
+#main-menu.small ul li a i {
+    color: #fff;
+}
+
+li.active {
+    background: #303030;
+}
+
+i.active, li.active i {
+    text-shadow: 0 0 10px #fff;
+}
+
+/**
+* =======
+* Alignments
+* =======
+**/
+
+/**
+* =======
+* Spacing / Padding
+* =======
+**/
+
+.margin-xs {
+    margin: 5px;
+}
+
+.margin-sm {
+    margin: 10px;
+}
+
+.margin-md {
+    margin: 15px;
+}
+
+.margin-lg {
+    margin: 20px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.padd-xs {
+    padding: 5px;
+}
+
+.padd-sm {
+    padding: 10px;
+}
+
+.padd-md {
+    padding: 15px;
+}
+
+.padd-lg {
+    padding: 20px;
+}
+
+.padd-left {
+    padding-left: 10px;
+}
+
+.padd-right {
+    padding-right: 10px;
+}
+
+.no-margin {
+    margin: 0 0 0 0;
+}
+
+table.no-padd tr td {
+    padding: 0 0 0 0;
+}
+
+/**
+* =======
+* Typography
+* =======
+**/
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.35em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.giant {
+    font-size: 4em;
+}
+
+.welcome-text {
+    width: 100%;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.welcome-text span {
+    font-size: 1.25em;
+    text-transform: lowercase;
+    color: #1e1e1e;
+}
+
+.footer-copyright {
+    font-size: 0.7em;
+    margin-right: 5px;
+}
+
+/**
+* =======
+* Lists
+* =======
+**/
+ul.changelog {
+    list-style: disk;
+    color: #1e1e1e;
+}
+
+ul.changelog li {
+    margin-left: 10px;
+    font-size: 0.85em;
+    padding: 3px;
+}
+
+/**
+* =======
+* Forms
+* =======
+**/
+
+input[type=submit].waves-button-input {
+    background: transparent;
+    border: none;
+}
+
+#register {
+    position: relative;
+}
+
+.btn.btn-sm {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 15px;
+}
+
+/**
+* =======
+* Animations
+* =======
+**/
+
+@-webkit-keyframes body-background {
+    0% {
+        background-position: 51% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 51% 0%
+    }
+}
+
+@-moz-keyframes body-background {
+    0% {
+        background-position: 51% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 51% 0%
+    }
+}
+
+@-o-keyframes body-background {
+    0% {
+        background-position: 51% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 51% 0%
+    }
+}
+
+@keyframes body-background {
+    0% {
+        background-position: 51% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 51% 0%
+    }
+}
+
+.tumblr-logo {
+    max-width: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 2px #fff;
+}
+
+/**
+* =======
+* Materialize
+* =======
+**/
+
+.card-content i.right {
+    margin-left: 0;
+}
+
+.modal {
+    background: rgba(26, 26, 26, 0.9);
+    color: #fff;
+}
+
+.modal .modal-footer {
+    background-color: rgba(26, 26, 26, 1);
+}
+
+.modal .btn-flat {
+    color: #fff;
+}
+
+.lean-overlay {
+    display: none !important;
+}
+
+.file-field .file-path-wrapper {
+    color: #fff;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.legend {
+    font-size: 0.85em;
+}
+
+.legend span {
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.chart {
+    max-height: 400px;
+}
+
+.input-field label {
+    text-align: left;
+}
+
+.activator a {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.range-field .tooltip {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    color: #1e1e1e;
+}
+
+.legend {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.sweet-alert input {
+    color: #1e1e1e;
+}
+
+input.error {
+    border-bottom: 1px solid #F44336 !important;
+    box-shadow: 0 1px 0 0 #F44336 !important;
+}
+
+.header-fixed {
+    width: 100%
+}
+
+.header-fixed > thead,
+.header-fixed > tbody,
+.header-fixed > thead > tr,
+.header-fixed > tbody > tr,
+.header-fixed > thead > tr > th,
+.header-fixed > tbody > tr > td {
+    display: block;
+}
+
+.header-fixed > tbody > tr:after,
+.header-fixed > thead > tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.header-fixed > tbody {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+    width: 20%;
+    float: left;
+}
+
+.chart canvas {
+    max-height: 350px;
+}
+
+.follower-counts {
+    max-height: 350px;
+    overflow-y: auto;
+}

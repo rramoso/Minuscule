@@ -1,0 +1,10 @@
+[18-Jan-2016 23:30:29 America/New_York] PHP Fatal error:  Call to undefined function getOauthSession() in /home/minurgij/public_html/application/core/MY_Model.php on line 35
+[31-Jan-2016 17:01:32 America/New_York] PHP Fatal error:  Call to a member function getRequestHandler() on null in /home/minurgij/public_html/application/controllers/api/Tumblr.php on line 38
+[31-Jan-2016 17:01:54 America/New_York] PHP Fatal error:  Call to a member function getRequestHandler() on null in /home/minurgij/public_html/application/controllers/api/Tumblr.php on line 38
+[31-Jan-2016 17:02:04 America/New_York] PHP Fatal error:  Call to a member function getRequestHandler() on null in /home/minurgij/public_html/application/controllers/api/Tumblr.php on line 38
+[07-Jul-2016 13:00:20 America/New_York] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home/minurgij/public_html/wp-settings.php on line 21
+[07-Jul-2016 13:00:20 America/New_York] PHP Warning:  require(ABSPATHwp-includes/load.php): failed to open stream: No such file or directory in /home/minurgij/public_html/wp-settings.php on line 21
+[07-Jul-2016 13:00:20 America/New_York] PHP Fatal error:  require(): Failed opening required 'ABSPATHwp-includes/load.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/minurgij/public_html/wp-settings.php on line 21
+[06-Mar-2017 21:53:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'wp_maybe_load_embeds' not found or invalid function name in /home/minurgij/public_html/wp-includes/plugin.php on line 525
+[06-Mar-2017 21:53:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'wp_oembed_add_discovery_links' not found or invalid function name in /home/minurgij/public_html/wp-includes/plugin.php on line 525
+[06-Mar-2017 21:53:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'wp_oembed_add_host_js' not found or invalid function name in /home/minurgij/public_html/wp-includes/plugin.php on line 525
